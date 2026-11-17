@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in · Smart Solar Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-wrap">
+    <div class="glass auth-card">
+      <a href="index.html" class="brand" style="margin-bottom:22px"><span class="brand-mark"></span>Smart Solar</a>
+      <h1>Welcome back</h1>
+      <p class="muted">Sign in to your rooftop energy dashboard.</p>
+
+      <form id="login-form" novalidate>
+        <div class="form-error"></div>
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+          <div class="field-error" data-error="email"></div>
+        </div>
+        <div class="field password-row">
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="••••••••">
+          <button type="button" data-toggle-password="login-password">Show</button>
+          <div class="field-error" data-error="password"></div>
+        </div>
+        <div class="actions" style="justify-content:space-between;margin-bottom:18px">
+          <span></span>
+          <a class="small" href="forgot.html" style="color:var(--accent2)">Forgot password?</a>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+      <div class="demo-box">
+        <strong>Demo accounts</strong>
+        <p class="muted small">Simulated data only. Use these to explore the platform.</p>
+        <div class="actions">
+          <button class="btn btn-ghost btn-sm" type="button" data-demo data-email="demo@solar.in" data-password="Demo@1234">Resident demo</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-demo data-email="admin@solar.in" data-password="Admin@1234">Admin demo</button>
+        </div>
+        <p class="muted small" style="margin-top:10px">Resident: demo@solar.in / Demo@1234<br>Admin: admin@solar.in / Admin@1234</p>
+      </div>
+
+      <p class="auth-switch">New here? <a href="register.html" style="color:var(--accent2);font-weight:600">Create an account</a></p>
+    </div>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

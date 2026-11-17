@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account · Smart Solar Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-wrap">
+    <div class="glass auth-card" style="width:min(520px,100%)">
+      <a href="index.html" class="brand" style="margin-bottom:22px"><span class="brand-mark"></span>Smart Solar</a>
+      <h1>Join your community</h1>
+      <p class="muted">Register your home to start monitoring and sharing solar energy.</p>
+
+      <form id="register-form" novalidate>
+        <div class="form-error"></div>
+        <div class="field"><label for="reg-name">Full name</label><input id="reg-name" name="name" autocomplete="name"><div class="field-error" data-error="name"></div></div>
+        <div class="field"><label for="reg-email">Email</label><input id="reg-email" name="email" type="email" autocomplete="email"><div class="field-error" data-error="email"></div></div>
+        <div class="form-grid">
+          <div class="field"><label for="reg-flat">Flat / apartment</label><input id="reg-flat" name="flat" placeholder="e.g. B-302"><div class="field-error" data-error="flat"></div></div>
+          <div class="field"><label for="reg-building">Building</label><input id="reg-building" name="building" placeholder="Society name, area"></div>
+        </div>
+        <div class="field password-row"><label for="reg-password">Password (min. 8 characters)</label><input id="reg-password" name="password" type="password" autocomplete="new-password"><button type="button" data-toggle-password="reg-password">Show</button><div class="field-error" data-error="password"></div></div>
+        <div class="field"><label for="reg-confirm">Confirm password</label><input id="reg-confirm" name="confirm" type="password" autocomplete="new-password"><div class="field-error" data-error="confirm"></div></div>
+        <button class="btn btn-primary btn-block" type="submit">Create account</button>
+      </form>
+
+      <p class="auth-switch">Already registered? <a href="login.html" style="color:var(--accent2);font-weight:600">Log in</a></p>
+    </div>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
